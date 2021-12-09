@@ -1,0 +1,146 @@
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0"></script>
+<div id="page" class="site">
+    <header id="masthead" class="main-header">
+        <div class="logo-wrapper">
+            <div class="inner-page-logo">
+                <a href="https://karunashraya.org">
+                    <img class="lazyload" src="https://karunashraya.org/wp-content/uploads/2019/09/karunashraya-bangalore-hospice-trust.png" />
+                </a>
+            </div>
+        </div>
+        <div class="top-right-container inner-page-right-container">
+            <div class="donate-btn">
+                <a href="https://karunashraya.org/donation-for-karunashraya.php" target="_blank"><span
+            class="btn site-btn red-bg">Donate</span></a>
+            </div>
+            <div class="language-switch">
+                <ul>
+                    <li class="lang-item lang-item-8 lang-item-kn lang-item-first"><a lang="kn" hreflang="kn" href="https://karunashraya.org/kn/education-research-2/">ಕನ್ನಡ</a></li>
+                    <li class="lang-item lang-item-5 lang-item-en current-lang"><a lang="en-US" hreflang="en-US" href="https://karunashraya.org/education-research/">English</a></li>
+                </ul>
+            </div>
+            <div class="humburger-menu">
+                <div class="menu-wrapper not-active top-menu-link">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <!--<nav id="site-navigation" class="main-navigation">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
+		</nav>#site-navigation -->
+    </header>
+    <!-- #masthead -->
+    <header class="fixed-header">
+        <div class="fixed-header-wrapper">
+            <div class="logo-wrapper">
+                <a href="https://karunashraya.org">
+                    <img alt="" data-src="https://karunashraya.org/wp-content/uploads/2019/09/karunashraya-bangalore-hospice-trust.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img alt=""
+              data-src="https://karunashraya.org/wp-content/uploads/2019/09/karunashraya-bangalore-hospice-trust.png"
+              class="lazyload"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
+                src="https://karunashraya.org/wp-content/uploads/2019/09/karunashraya-bangalore-hospice-trust.png"
+                alt="" /></noscript></noscript>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div id="content" class="site-content">
+
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main">
+
+
+                <article id="post-38" class="post-38 page type-page status-publish hentry">
+                    <div class="entry-content">
+
+                        <div class="row no-margin top-banner">
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12 no-padding">
+                                <div class="top-links">
+                                    <ul>
+                                        <li data-title="education-research">Education &amp; <span>Research</span></li>
+                                        <li data-title="training-programs">Training <span>Programs</span></li>
+                                        <li data-title="how-it-helps">How it <span>helps</span></li>
+                                        <li data-title="team">Research <span>Team</span></li>
+                                        <li data-title="testimonials-gallery">Testimonials &amp; <span>Gallery</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 no-padding">
+                                <div class="banner-header">
+                                    <div class="banner-image">
+                                        <img src="https://karunashraya.org/wp-content/uploads/2019/11/education-and-research-team-at-karunashraya-bangalore.jpg" class="lazyload" />
+
+                                        <div class="banner-content">
+                                            <div class="container">
+                                                <div class="banner-container flex-align-center">
+                                                    <div class="page-title white">
+                                                        <h1 class="title">Learning, Discovery <span> &amp; Beyond</span></h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <!-- .entry-content -->
+
+                </article>
+                <!-- #post-38 -->
+
+            </main>
+            <!-- #main -->
+        </div>
+        <!-- #primary -->
+
+
+    </div>
+    <!-- #content -->
+    <!-- Button to Open the Appointment Form-->
+    <div class="modal appointment-form-popup" id="appointment_form">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Request Appointment</h4>
+                    <button type="button" id="bookingCloseBtn" class="close" data-dismiss="modal">×</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div role="form" class="wpcf7" id="wpcf7-f926-o1" lang="en-US" dir="ltr">
+                        <div class="screen-reader-response" role="alert" aria-live="polite"></div>
+                        <form action="/education-research/#wpcf7-f926-o1" method="post" class="wpcf7-form init book-appointment-form" novalidate="novalidate">
+                            <div style="display: none;">
+                            </div>
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- #page -->
