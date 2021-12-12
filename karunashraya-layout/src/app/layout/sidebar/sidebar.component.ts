@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LayoutService } from '../services/layout.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(public layoutService:LayoutService) { }
+  // layoutServiceisAuthenticated
   ngOnInit(): void {
   }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LayoutService } from '../services/layout.service';
 
 @Component({
   selector: 'app-content-area',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentAreaComponent implements OnInit {
 
-  constructor() { }
+  constructor(public layoutService:LayoutService) { }
+  
+
 
   ngOnInit(): void {
   }
