@@ -1,0 +1,21 @@
+{
+    "auth": [
+        {
+            "id": "rajk",
+            "password": "rajk123",
+            "active": true,
+            "roles":[
+                {"id":1,"role":"admin"},
+                {"id":2,"role":"vol"}
+            ]
+        },
+        {
+            "id": "kala",
+            "passwrd": "kala123",
+            "active": true,
+            "roles":[
+                {"id":2,"role":"vol"}
+            ]
+        }
+    ]
+}
