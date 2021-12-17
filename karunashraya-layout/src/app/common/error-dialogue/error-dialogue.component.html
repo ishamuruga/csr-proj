@@ -1,5 +1,11 @@
 <div>
-    <h1>ABCD</h1>
-    <h1>{{title}}</h1>
-    <h2>ABCD</h2>
+    <h1>Error Has Occured</h1>
+    <div mat-dialog-content>
+        <p>
+            {{message}}
+        </p>
+    </div>
+    <div mat-dialog-actions align="center">
+        <button mat-raised-button color="warn" (click)="onConfirmClick()" tabindex="1">Close</button>
+    </div>
 </div>

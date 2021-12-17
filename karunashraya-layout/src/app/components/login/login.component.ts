@@ -50,7 +50,6 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    throw new Error("Test");
     this.layoutService.isAuthenticated = false;
 
   }

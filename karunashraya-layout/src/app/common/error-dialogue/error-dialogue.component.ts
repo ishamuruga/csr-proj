@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, NgZone, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 
 
@@ -7,33 +7,30 @@ import { MatDialogRef, MAT_DIALOG_DATA, MatDialog } from '@angular/material/dial
   templateUrl: './error-dialogue.component.html',
   styleUrls: ['./error-dialogue.component.css']
 })
-export class ErrorDialogueComponent implements OnInit {
+export class ErrorDialogueComponent {
 
-  message: string = "Are you sure?";
+  message: string = "Error Occured!";
   confirmButtonText = "Yes";
   cancelButtonText = "Cancel";
 
-  title = "Superstar";
-
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
-    private dialogRef: MatDialogRef<ErrorDialogueComponent>) {
+    private dialogRef: MatDialogRef<ErrorDialogueComponent>,
+    private ngZone: NgZone) {
+      console.log(data);
+      
     if (data) {
-
       this.message = data.message || this.message;
-      if (data.buttonText) {
-        this.confirmButtonText = data.buttonText.ok || this.confirmButtonText;
-        this.cancelButtonText = data.buttonText.cancel || this.cancelButtonText;
-      }
       console.log(this.message);
-      console.log(this.confirmButtonText);
-      console.log(this.cancelButtonText);
     }
 
   }
 
   onConfirmClick(): void {
-    this.dialogRef.close(true);
+    console.log("closing...")
+    this.ngZone.run(() => {
+      this.dialogRef.close(true);
+    });
   }
 
   //  constructor(
@@ -46,8 +43,6 @@ export class ErrorDialogueComponent implements OnInit {
   //   this.dialogRef.close();
   // }
 
-  ngOnInit(): void {
-    this.title = "BABABABABABAB";
-  }
+
 
 }
