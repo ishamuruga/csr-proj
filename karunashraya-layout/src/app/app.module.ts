@@ -16,6 +16,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { GlobalExceptionService } from './common/global-exception.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ErrorDialogueComponent } from './common/error-dialogue/error-dialogue.component';
+import { VolunteeringRegistrationComponent } from './components/volunteering-registration/volunteering-registration.component';
 
 //import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -28,7 +29,8 @@ import { ErrorDialogueComponent } from './common/error-dialogue/error-dialogue.c
     LoginComponent,
     DashboardComponent,
     PageNotFoundComponent,
-    ErrorDialogueComponent
+    ErrorDialogueComponent,
+    VolunteeringRegistrationComponent
   ],
   imports: [
     BrowserModule,

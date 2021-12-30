@@ -1,0 +1,21 @@
+<div>
+<p>dashboard works!</p>
+<table border="1">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Cost</td>
+        <td>Quantantity</td>
+    </tr>
+    <tr *ngFor="let p of prods">
+        <td>{{p.id}}</td>
+        <td>{{p.name}}</td>
+        <td>{{p.cost}}</td>
+        <td>{{p.quantity}}</td>
+    </tr>
+</table>
+
+<button (click)="doCreateNewProds()">Create</button>
+<br/>
+<button (click)="doProcessLargeArray()">Process Large Data</button>
+</div>

@@ -1,0 +1,20 @@
+<div>
+  <h1>My Full Stack Session w Angular</h1>
+  <h2>The Model value from Controller is {{title}}</h2>
+  <!-- <input type="text" placeholder="enter value" name="title" [value]="title" (keyup)="onTitleChange($event)" #xyz/> -->
+  <input type="text" placeholder="enter value" name="title" [(ngModel)]="title"  #xyz/>
+  <button (click)="doHandleToggle()">Toggle</button>
+  <hr/>
+  <button (click)="doReadData(xyz.value)">ReadData</button>
+  {{xyz.value}}
+  <div *ngIf="flag">
+    <select>
+      <option *ngFor="let n of names" [value]="n">{{n}}</option>
+    </select>
+  </div>
+  <hr/>
+  <div>
+    <app-grid [stuData]="students" (onNewStudentAdd)="doHandleAddStudent($event)"></app-grid>
+  </div>
+  <hr/>
+</div>
