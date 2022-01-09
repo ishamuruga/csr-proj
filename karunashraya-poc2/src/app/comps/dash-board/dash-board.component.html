@@ -1,0 +1,49 @@
+<div>
+    <h1>Add Item</h1>
+    <div class="row">
+      <div class="col-1">
+        <button type="button" class="btn btn-sm btn-primary" (click)="display('add')">Add Item</button>
+      </div>
+      <div class="col-1"></div>
+      <button type="button" class="btn btn-sm btn-secondary" (click)="display('clear')">Close</button>
+    </div>
+  
+    <div *ngIf="bDisplay">
+      <form>
+        <div class="form-group">
+          <label for="exname">Name</label>
+          <input type="name" class="form-control" name="name" [(ngModel)]="name" aria-describedby="emailHelp" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+          <label for="excost">cost</label>
+          <input type="number" class="form-control" name="cost" [(ngModel)]="cost" placeholder="0">
+        </div>
+        <div class="form-group">
+          <label for="exquan">quantity</label>
+          <input type="text" class="form-control" name="category" [(ngModel)]="category" placeholder="0">
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="add()">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div>
+    <h1>Fetch Items</h1>
+    <table class="table table-sm table-hover table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Category</th>
+          <th scope="col">Cost</th>
+          <th scope="col">Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of itemsArray | async">
+          <th scope="row">{{i.id}}</th>
+          <th scope="row">{{i.category}}</th>
+          <th>{{i.cost}}</th>
+          <th>{{i.name}}</th>
+        </tr>
+      </tbody>
+    </table>
+  </div>

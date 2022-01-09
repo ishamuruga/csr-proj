@@ -17,6 +17,7 @@ import { GlobalExceptionService } from './common/global-exception.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ErrorDialogueComponent } from './common/error-dialogue/error-dialogue.component';
 import { VolunteeringRegistrationComponent } from './components/volunteering-registration/volunteering-registration.component';
+import { FundRaisingComponent } from './components/fund-raising/fund-raising.component';
 
 //import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -30,7 +31,8 @@ import { VolunteeringRegistrationComponent } from './components/volunteering-reg
     DashboardComponent,
     PageNotFoundComponent,
     ErrorDialogueComponent,
-    VolunteeringRegistrationComponent
+    VolunteeringRegistrationComponent,
+    FundRaisingComponent
   ],
   imports: [
     BrowserModule,

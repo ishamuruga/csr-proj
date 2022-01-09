@@ -6,6 +6,7 @@ import { environment } from 'src/environments/environment';
 
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
 //import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 //import { getFirestore, provideFirestore } from '@angular/fire/firestore';
@@ -14,10 +15,18 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './comps/login/login.component';
+import { DashBoardComponent } from './comps/dash-board/dash-board.component';
+import { RegistrationComponent } from './comps/registration/registration.component';
+import { UserProfileComponent } from './comps/user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    DashBoardComponent,
+    RegistrationComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +34,8 @@ import { AppComponent } from './app.component';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    AngularFireAnalyticsModule
+    AngularFireAnalyticsModule,
+    AngularFireAuthModule
     // provideFirebaseApp(() => initializeApp({
     //   apiKey: "AIzaSyAR4dg-XCTlKalrC6oJ4YE5vzbwpKL13VU",
     //   authDomain: "karunashraya-portal.firebaseapp.com",
