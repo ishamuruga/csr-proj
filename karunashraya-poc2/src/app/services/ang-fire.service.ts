@@ -37,37 +37,47 @@ export class AngFireService {
   }
 
   /* Sign in */
-  SignIn(email: string, password: string) {
+  signIn(email: string, password: string) {
     console.log(email + "," + password);
-    this.angularFireAuth.signInWithEmailAndPassword(email, password).then(x => {
-      console.log(x);
-    }).catch(e => {
-      console.error("ERROR");
-      console.error(e)
-    }).finally(() => {
-      console.log("Happilly");
-    })
+    return this.angularFireAuth.signInWithEmailAndPassword(email, password);
+    // this.angularFireAuth.signInWithEmailAndPassword(email, password).then(x => {
+    //   console.log(x);
+    // }).catch(e => {
+    //   console.error("ERROR");
+    //   console.error(e)
+    // }).finally(() => {
+    //   console.log("Happilly");
+    // })
   }
 
   async googleSignin() {
     const provider = new firebase.auth.GoogleAuthProvider();
     const credential = await this.angularFireAuth.signInWithPopup(provider);
-    return this.updateUserData(credential.user);
+    
+    
+    
+    let dd= this.updateUserData(credential.user);
+
+    return dd;
+
   }
 
   private updateUserData(user: any) {
     // Sets user data to firestore on login
     const userRef: AngularFirestoreDocument<User> = this.afs.doc(`users/${user.uid}`);
 
-    const data = { 
+    const data:User = { 
       uid: user.uid, 
       email: user.email, 
       displayName: user.displayName, 
       photoURL: user.photoURL
     } 
 
-    return userRef.set(data, { merge: true })
+    
 
+    userRef.set(data, { merge: true })
+
+    return data;
   }
 
   async signOut() {
