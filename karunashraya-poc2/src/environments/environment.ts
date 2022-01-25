@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase : {
-    apiKey: "AIzaSyAR4dg-XCTlKalrC6oJ4YE5vzbwpKL13VU",
+    apiKey: "AIzaSyAR4dg-XXXXXXXXXXXXX",
     authDomain: "karunashraya-portal.firebaseapp.com",
     projectId: "karunashraya-portal",
     storageBucket: "karunashraya-portal.appspot.com",
     messagingSenderId: "642796786399",
-    appId: "1:642796786399:web:6ae50b38295d494b4a4f6a",
+    appId: "1:642796786399:web:XXXXXXXXXXXXXXXX",
     measurementId: "G-RYEMBF5C1K"
   }
 };
